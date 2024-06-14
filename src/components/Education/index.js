@@ -85,7 +85,7 @@ const Education = () => {
             {education.map((education, index) => (
               <TimelineItem>
                 <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <EducationCard education={education} />
+                  <EducationCard education={education} id={index} />
                 </TimelineContent>
                 <TimelineSeparator>
                   <TimelineDot variant="outlined" color="secondary" />

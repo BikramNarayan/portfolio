@@ -1,4 +1,5 @@
 export const Bio = {
+  id: 1,
   name: "Bikram Narayan Dhanraj",
   roles: ["Full Stack Developer", "DSA Enthusiast", "Competitive Programmer"],
   description:
