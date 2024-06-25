@@ -131,16 +131,6 @@ const Projects = () => {
               Web Apps
             </ToggleButton>
           )}
-          <Divider />
-          {toggle === "machine learning" ? (
-            <ToggleButton active onClick={() => setToggle("machine learning")}>
-              AI/ML
-            </ToggleButton>
-          ) : (
-            <ToggleButton onClick={() => setToggle("machine learning")}>
-              AI/ML
-            </ToggleButton>
-          )}
         </ToggleGroup>
         <CardContainer>
           {toggle === "all" &&
