@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1100px;
-  gap: 12px;
+  gap: 20px;
 `;
 
 const Title = styled.div`
@@ -124,17 +124,14 @@ const Skills = () => {
         </Desc>
         <SkillsContainer>
           {skills.map((item, index) => (
-            <Skill key={index}>
-              <SkillTitle>{item.title}</SkillTitle>
-              <SkillList>
-                {item.skills.map((skill, skillIndex) => (
-                  <SkillItem key={skillIndex}>
-                    <SkillImage src={skill.image} />
-                    {skill.name}
-                  </SkillItem>
-                ))}
-              </SkillList>
-            </Skill>
+            <SkillList>
+              {item.skills.map((skill, skillIndex) => (
+                <SkillItem key={skillIndex}>
+                  <SkillImage src={skill.image} />
+                  {skill.name}
+                </SkillItem>
+              ))}
+            </SkillList>
           ))}
         </SkillsContainer>
       </Wrapper>
